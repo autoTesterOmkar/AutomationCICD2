@@ -25,7 +25,7 @@ public class CartPage extends AbstractCompoenent {
 	WebElement CheckoutBtn;
 	
 	
-	
+	//Test is Done
 	public void Cartpage() {
 		CartBtn.click();
 	}
