@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="RSA.resources.ExtentReportsNG1">
+      <class name="RSA_Training.Tests.SubmitOrderTest">
         <methods>
-          <include name="Demo"/>
-          <include name="getReportObject"/>
+          <include name="Teardown"/>
+          <include name="launchApplication"/>
+          <include name="SubmitOrder" invocation-numbers="1"/>
         </methods>
-      </class> <!-- RSA.resources.ExtentReportsNG1 -->
+      </class> <!-- RSA_Training.Tests.SubmitOrderTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

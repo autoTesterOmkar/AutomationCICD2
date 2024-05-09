@@ -29,6 +29,9 @@ public class PaymentPage extends AbstractCompoenent {
 	
     @FindBy (css="label[class*='ng-star-inserted']")
 	WebElement CopyOrderId; 
+    
+    @FindBy (xpath="//h1[text()=' Thankyou for the order. ']")
+    WebElement SucessText;
 	
 	public void SelectCountry() {
 		CountrytextBox.sendKeys("Ind");
@@ -43,6 +46,11 @@ public class PaymentPage extends AbstractCompoenent {
 		PlacedOrderBtn.click();
 		String OrderId= CopyOrderId.getText();
 		return OrderId;
+	}
+	
+	public String SuccessMsg() {
+		String Msg= SucessText.getText();
+		return Msg;
 	}
 	
 }
